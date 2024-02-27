@@ -1,9 +1,12 @@
 import { useState } from 'react';
-import './App.module.css';
+import ListAdder from "./components/ListAdder";
+import List from "./components/List";
+import './App.css';
 
 function App() {
 	return <>
-		<h1>Vite + React</h1>
+		<ListAdder />
+		<List />
 	</>;
 }
 
