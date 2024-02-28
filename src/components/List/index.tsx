@@ -1,7 +1,13 @@
+import { useSelector } from "react-redux";
+import { add } from "../../store/listSlice.ts";
+import ListItem from "./ListItem.tsx";
+
 function ListViewer()
 {
+	const list = useSelector( state=>state.todo.value );
+
 	return <div className="listViewerWrapper">
-		대충 여기에 리스트 들어갈거라는 내용
+		{list.map( (content, i)=><ListItem key={`${i}_${content}`} content={content} index={i} /> )}
 	</div>;
 }
 
