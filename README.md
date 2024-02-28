@@ -1,5 +1,6 @@
 ## 과제 기능
-<img src="https://github.com/summerdidi/wanted-pre-onboarding-frontend-challenge-19/blob/main/todoListAssignment.png" width="500" >
+<img src="https://github.com/lybell-art/wanted-pre-onboarding-frontend-challenge-19/blob/main/result.png" width="500" >
+
 - [x] Add 기능 추가
 - [x] Delete 기능 추가
 - [x] 스타일링
