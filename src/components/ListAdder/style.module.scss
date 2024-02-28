@@ -1,0 +1,15 @@
+@use "../../mixins.scss";
+
+.input {
+	box-sizing: border-box;
+	height: 100%;
+	border: 1px solid white;
+	outline: none;
+	border-radius: 5px;
+	padding: 5px 10px;
+	font-size: 1.25rem;
+}
+
+.addButton {
+	@include mixins.ganziButton(#03A9F4);
+}

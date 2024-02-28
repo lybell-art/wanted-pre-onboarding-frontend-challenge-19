@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
 import { remove } from "../../store/listSlice.ts";
+import style from "./style.module.scss";
 
 function ListItem({index, content}: {index: int, content: string})
 {
@@ -10,9 +11,9 @@ function ListItem({index, content}: {index: int, content: string})
 		dispatch(remove(index));
 	}
 
-	return <div className="listItem">
+	return <div className="listRow">
 		<div className="listContent">{content}</div>
-		<div className="button" onClick={deleteItemFromList}>Delete</div>
+		<div className={`button ${style.deleteButton}`} onClick={deleteItemFromList}>Delete</div>
 	</div>;
 }
 

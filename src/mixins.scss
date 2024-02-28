@@ -1,0 +1,20 @@
+@mixin ganziButton($color) {
+	color: $color;
+	overflow: hidden;
+	&::before {
+		content: "";
+		position: absolute;
+		width: 400%;
+		height: 100%;
+		transform: translateX(-100px);
+		transition: transform 0.5s;
+		background: linear-gradient(120deg, $color 50%, transparent 0%);
+		z-index: -1;
+	}
+	&:hover {
+		color: white;
+		&::before {
+			transform: translateX(100px);
+		}
+	}
+}

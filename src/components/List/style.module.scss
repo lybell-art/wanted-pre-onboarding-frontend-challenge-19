@@ -1,0 +1,11 @@
+@use "../../mixins.scss";
+
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.deleteButton {
+	@include mixins.ganziButton(#f44336);
+}

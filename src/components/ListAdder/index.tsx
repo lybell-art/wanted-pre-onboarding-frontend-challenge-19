@@ -1,6 +1,7 @@
 import { useRef, MouseEvent as ReactMouseEvent } from "react";
 import { useDispatch } from "react-redux";
 import { add } from "../../store/listSlice.ts";
+import style from "./style.module.scss";
 
 function ListAdder()
 {
@@ -14,9 +15,9 @@ function ListAdder()
 		ref.current.value = "";
 	}
 
-	return <div className="listAdder">
-		<input type="text" ref={ref} />
-		<div className="button" onClick={addTextToList}>Add</div>
+	return <div className={"listRow"}>
+		<input className={`listContent ${style.input}`} type="text" ref={ref} />
+		<div className={`button ${style.addButton}`} onClick={addTextToList}>Add</div>
 	</div>;
 }
 

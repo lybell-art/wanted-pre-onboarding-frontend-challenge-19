@@ -13,7 +13,7 @@ export const listSlice = createSlice({
 	initialState,
 	reducers: {
 		add: (state, action: PayloadAction<string>)=>{
-			if(action.payload === "") return;
+			if(/^\s*$/.test(action.payload)) return;
 			state.value = [...state.value, action.payload];
 		},
 		remove: (state, action: PayloadAction<int>)=>{
