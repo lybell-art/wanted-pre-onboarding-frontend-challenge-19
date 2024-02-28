@@ -16,7 +16,7 @@ function ListAdder()
 
 	return <div className="listAdder">
 		<input type="text" ref={ref} />
-		<div className="button" onClick={addTextToList}>추가하기</div>
+		<div className="button" onClick={addTextToList}>Add</div>
 	</div>;
 }
 
